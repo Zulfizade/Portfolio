@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
     padding: 100px;
     background-color: #F4A261;
     display: flex;
@@ -16,32 +20,19 @@
     gap: 40px;
 }
 
-p {
-    font-size: 20px;
-}
-
-.p_yellow {
-    color: #FFD700 !important;
-    padding-top: 20px;
-    margin-bottom: 7px;
-}
-
-.p_little {
-    margin-top: 10px;
-    font-size: 14px;
-}
 
 .secForm {
     background-color: #fff;
     border-radius: 10px;
-    height: 350px;
+    width: 550px;
+    height: 500px;
     z-index: 2;
 
 }
 
 input {
-    width: 300px;
-    padding: 10px;
+    width: 500px;
+    padding: 15px;
     border-radius: 10px;
     margin: 10px;
     border: 1px solid #ccc;
@@ -52,19 +43,22 @@ form {
     text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 7px;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 form h1 {
+    font-size: 45px;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 10px;
+    font-size: 15px;
     background-color: #F4A261;
     color: #fff;
     border: none;
@@ -78,22 +72,45 @@ button {
 }
 
 .info {
-    padding: 20px;
-    height: max-content;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.info h1 {
-    margin-bottom: 15px;
+.infoP1 {
+    font-size: 25px;
+    margin-top: 30px;
 }
 
-.info p {
+.infoP2 {
     color: white;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
 }
 
-.info a {
+.infoP3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.infoP3 p {
+    padding-top: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+
+.social a {
     color: #FFC107;
-    font-size: large;
+    font-size: 30px;
     padding-right: 5px;
     text-decoration: none;
     transition: 0.3s ease;
@@ -102,11 +119,21 @@ button {
         color: #000000;
     }
 
-
 }
+
+
 
 span {
     color: #954a0d;
+}
+
+.p_yellow {
+    color: #FFD700 !important;
+    font-size: 35px;
+}
+
+.p_little {
+    font-size: 12px;
 }
 
 
@@ -115,8 +142,8 @@ span {
     top: 0;
     left: 0;
     border-style: solid;
-    border-width: 350px 350px 0 0;
-    border-color: white transparent ;
+    border-width: 500px 500px 0 0;
+    border-color: white transparent;
     z-index: 1;
-    
+
 }
